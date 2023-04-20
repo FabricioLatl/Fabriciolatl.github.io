@@ -1,0 +1,474 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-image: url('./assets/img/background-image.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+header {
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.logo img {
+	height: 50px;
+}
+
+.menu-icon {
+	display: none;
+}
+
+.menu a {
+	color: #333;
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-link {
+  display: inline;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hamburger-line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+}
+
+
+/* Media query for mobile view */
+
+
+
+
+
+
+.divider {
+  height: 4px;
+  width: 50px;
+  background-color: red;
+  margin: 10px 0;
+}
+
+.splash {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	color:#fff;
+	padding: 100px;
+	height: calc(100vh - 70px);
+}
+
+.text {
+	max-width: 500px;
+}
+
+.text h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.text p {
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+
+.cta {
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  background-color: #fff;
+  color: #333;
+  padding: 15px 25px; /* Updated to add more space around the text */
+  border-radius: 0;
+  text-decoration: none;
+  display: inline-block;
+  width: calc(50% - 25px); /* Occupy half of the space minus a small margin */
+  text-align: center;
+  margin-right: 15px; /* Updated to add more separation between buttons */
+}
+
+
+
+.cta:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.image img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*quienes somos*/
+.quienes-somos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #fff;
+}
+.quienes-somos .img,
+.quienes-somos .text {
+    flex-basis: 45%; /* Adjusted for more space between image and text */
+}
+
+.quienes-somos .img {
+  padding-right: 20px; /* Add padding to the right side of the image */
+}
+.quienes-somos .text {
+  padding-left: 20px; /* Add padding to the left side of the text */
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.quienes-image img {
+  max-width: 100%;
+  height: auto;
+  padding-right: 10%;
+}
+
+.quienes-text {
+  max-width: 500px;
+}
+
+.quienes-text h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.quienes-text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/*mentores*/
+.mentores {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.mentores-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+  max-width: 80%; /* Occupy 80% of the page width */
+  margin: 0 auto;
+  padding: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.mentores-header {
+  flex-basis: 30%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  height: 100%;
+}
+.mentores-title {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  height: 100%; /* Added to fill the space vertically */
+}
+
+.mentores-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+  padding: 1px; /* Add a 1-pixel gap between the items */
+}
+
+.mentor {
+  display: flex;
+  align-items: center;
+  flex-basis: 34.8%;
+  background-color: #fff;
+  padding: 10px;
+}
+.mentor:last-child {
+  border-right: none; /* Remove right border from the last mentor item */
+}
+
+.mentor-photo {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 10px;
+}
+
+.mentor-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.mentor-name-line {
+  display: flex;
+  align-items: center;
+}
+
+.mentor-line {
+  width: 40px;
+  height: 3px;
+  background-color: red;
+  margin-right: 10px;
+}
+
+.mentor-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mentor-description {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+/*footer*/
+
+footer {
+  background-color: #000;
+  padding: 20px 0;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  max-width: 300px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-text h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-divider {
+  width: 90%; /* Make the line shorter than the whole width of the page */
+  height: 2px;
+  background-color: #fff;
+  margin: 20px auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+.footer-bottom .menu-link {
+  color: #fff;
+}
+
+
+.copyright-bar {
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 30px;
+}
+
+.quienes-image-mobile {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+
+  body{
+    overflow-x: hidden;
+  }
+  .hamburger {
+    display: inline;
+}
+
+.nav-buttons {
+    display: none;
+    flex-direction: column;
+}
+
+.menu-toggle:checked ~ .nav-buttons {
+    display: flex;
+}
+	.menu {
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		position: absolute;
+		top: 70px;
+		left: 0;
+		background-color: #fff;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		padding: 10px;
+	}
+	
+	.menu-icon {
+		display: block;
+		color: #333;
+		font-size: 24px;
+		cursor: pointer;
+	}
+
+	.menu-icon i {
+		transform: rotate(0deg);
+		transition: transform 0.3s ease-in-out;
+	}
+
+	.menu-icon.active i {
+		transform: rotate(90deg);
+	}
+
+	.menu a {
+		display: block;
+		margin: 10px 0;
+	}
+
+  .splash {
+    justify-content: flex-start;
+    padding: 0%;
+    padding-left: 5%;
+  }
+  
+  
+  .content-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .quienes-somos .img,
+  .quienes-somos .text {
+    flex-basis: 100%;
+    padding: 0;
+  }
+
+  .quienes-text {
+    text-align: center;
+  }
+  .quienes-image img {
+    max-width: 80%;
+    height: auto;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-left: 10%;
+}
+/* Add this media query to the end of your CSS file */
+@media (max-width: 768px) {
+  /* ... your existing mobile styles ... */
+
+  /* Footer mobile styles */
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-text {
+    margin-bottom: 20px;
+  }
+
+  .footer-divider {
+    width: 80%;
+    margin-top:10%;
+    margin-bottom: 10%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .footer-bottom .menu-link {
+    margin-bottom: 10px;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    }
+
+  .mentores-wrapper{
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+  }
+  .mentores-header {
+    display: none;
+  }
+  .quienes-image {
+    display: none;
+  }
+
+  .quienes-image-mobile {
+    display: block;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .quienes-image-mobile img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+}
